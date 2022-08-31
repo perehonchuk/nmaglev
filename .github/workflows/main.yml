@@ -8,5 +8,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: eqw
-        uses: perehonchuk/nmaglev/roman_eqwalizer_action@v1
+        uses: perehonchuk/nmaglev/roman_eqwalizer_action@v2
 
