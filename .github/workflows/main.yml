@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  eqwalizer_job:
+    runs-on: ubuntu-latest
+    name: eqwalizer
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: eqw
+        uses: perehonchuk/nmaglev/roman_eqwalizer_action@v1
+
