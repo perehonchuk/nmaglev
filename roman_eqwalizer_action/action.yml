@@ -1,0 +1,15 @@
+name: 'Run eqWAlizer'
+description: 'Running eqWAlizer'
+inputs:
+  rebar-root:
+    description: 'rebar root dir'
+    required: false
+    default: '.'
+outputs:
+  diagnostic: # id of output
+    description: 'Diagnostics'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.rebar-root }}
